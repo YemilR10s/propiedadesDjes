@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+/* colores */
+
+:root{
+    --white: #fff;
+    --blac: black;
+}
+
+/********************* headerrr***************************** */
+
+header .nav-bar{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.5s;
+}
+
+header .nav-bar ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+header .nav-bar.scroll{
+    background-color: var(--white);
+}
+header .nav-bar ul .fa-xmark{
+    display: none;
+}
+header .nav-bar .fa-bars{
+    display: none;
+}
+
+header .nav-bar ul li{
+    margin: 20px 20px;
+}
+
+header .nav-bar ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: 0.5s;
+    
+}
+
+header .nav-bar ul li a:hover{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+header .nav-bar .img__logo{
+    font-size: 80px;
+    width: 150px;
+    height: 60px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+header .portada-principal{
+    width: 100%;
+    height: 100vh;
+    background-image: url(imaganes/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .portada-principal .titulo{
+    width: 400px;
+    height: 400px;
+    font-size: 3em;
+}
+/* responsive 700px */
+@media  (max-width: 700px) {
+
+    header .nav-bar ul{
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background: var(--white);
+        right: -100%;
+        transition: 0.5s;
+        
+    }
+    header .nav-bar ul.active{
+        right: 0;
+        
+    }
+    header .nav-bar .fa-bars{
+        position: absolute;
+        display: block;
+        top: 0;
+        right:0;
+        margin: 15px;
+        font-size: 2em;
+        cursor: pointer;
+    }
+    header .nav-bar ul .fa-xmark{
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        margin: 30px;
+        font-size: 2em;
+        cursor: pointer;
+    }
+    header .nav-bar ul li a{
+        width: 100%;
+        margin: 20px;
+    }
+    /* header .nav-bar ul li a:hover{
+        width: 100%;
+
+        background-color    : var(--blac);
+        color: var(--white);
+    } */
+    
+}
+
+/* *********************** propiedades **************************** */
+
+.propiedades{
+    width: 100%;
+    height: 100vh;
+}
+.propiedades span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 3em;
+}
+.propiedades .botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 3em;
+}
+.propiedades .botones button{
+    padding: 10px 20px;
+    margin: 0 20px;
+    cursor: pointer;
+    
+
+}
+.propiedades .casasContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2em    ;
+}
+.propiedades .casas{ 
+    width: 300px;
+    height: 300px;
+}
+.propiedades .casas img{
+    width: 100%;
+    height: 200px;
+}
+
+
