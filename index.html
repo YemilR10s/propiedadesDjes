@@ -9,20 +9,25 @@
     <title>Propiedades-djes</title>
 </head>
 <body>
+
+ <!----------------------menu------------------------->
+
     <header>
         <nav class="nav-bar" id="nav-bar">
-            <img class="img__logo" src="imaganes/logo.png" alt="D-JES">
+            <a href="#portada-principal"> <img class="img__logo" src="imaganes/logo.png" alt="D-JES"></a>
+           
             <ul id="ul">
                 <i class="fa-solid fa-xmark" onclick="cerrar()"></i>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">catalogo</a></li>
-                <li><a href="#">quienes somos</a></li>
-                <li><a href="#">contactanos</a></li>
+                <li><a href="#portada-principal">Inicio</a></li>
+                <li><a href="#catalogo">catalogo</a></li>
+                <li><a href="#aboutAs">quienes somos</a></li>
+                <li><a href="#footer">contactanos</a></li>
             </ul>
             <i class="fa-solid fa-bars" onclick="hamburguesa()"></i>
         </nav>
+ <!----------------------inicio------------------------->
         
-        <div class="portada-principal">
+        <div class="portada-principal" id="portada-principal">
             <div class="titutlo">
                 <h1><span>propiedades D-jes</span> tu futura inversion <br>en nuestras manos</h1>
             </div>
@@ -30,7 +35,9 @@
     </header>
     
     
-    <section class="propiedades">
+<!----------------------propiedades------------------------->
+
+    <section class="propiedades" id="catalogo">
         <span>Propiedades a la venta</span>
         <!------------------ botones ------------------------->
         <div class="botones">
@@ -137,7 +144,56 @@
         </div>
         
     </section>
+
+<!----------------------about us------------------------->
+
+    <section class="aboutAs" id="aboutAs">
+        <div class="imagen"></div>
+        <div class="texto">
+            <h2>Un poco sobre nosotros</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam eligendi ipsa, sequi aliquid eos temporibus itaque nihil, commodi quam asperiores aut iusto hic id laudantium laborum, accusantium mollitia quia exercitationem!</p>
+        </div>
+    </section>
+
+<!----------------------clientes------------------------->
+
+    <section class="clientes" id="clientes">
+
+    </section>
+
+<!---------------------- footer------------------------->
     
+<footer class="" id="footer" >
+    <div class="propiedadesDjes">
+        <h2>propiedadesDjes</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis neque a facere explicabo ex eligendi suscipit. Minima ea soluta at mollitia, cumque et neque, maiores est accusantium commodi id sit!</p>
+    </div>
+     <div class="legales">
+        <ul>
+            <li><a href="">Aviso Legal</a></li>
+            <li><a href="">Terminos y condiciones</a></li>
+            <li><a href="">politicas de tratamiento de datos</a></li>
+            <li><a href="">politicas de cookies</a></li>
+        </ul>
+    </div>
+
+    
+    <div class="contacto">
+        <form action="">
+            <input type="text" placeholder="Nombre">
+            <input type="number" placeholder="Telefono">
+            <textarea name="" id="" placeholder="¿como te podemos ayudar?"></textarea>
+        </form>
+        <div class="redesSociales">
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-telegram"></i>
+    </div>
+    </div>
+</footer>
+<hr>
+<p class="derechos">Propiedades D-JES &copy; 2024-Derechos reservados</p>
     <script src="main.js"></script> 
 </body>
 </html>
